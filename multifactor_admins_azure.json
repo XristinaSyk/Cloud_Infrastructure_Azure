@@ -1,0 +1,53 @@
+{
+    "properties": {
+        "displayName": "Require MFA for Administrators",
+        "state": "enabled",
+        "conditions": {
+            "users": {
+                "includeRoles": [
+                    "62e90394-69f5-4237-9190-012177145e10", // Global Administrator
+                    "fe930be7-5e62-47db-91af-98c3a49a38b1", // Privileged Role Administrator
+                    "729827e3-9c14-49f7-bb1b-9608f156bbb8", // User Administrator
+                    "194ae4cb-b126-40b2-bd5b-6091b380977d", // Security Administrator
+                    "e8611ab8-c189-46e8-94e1-60213ab1f814"  // Conditional Access Administrator
+                ],
+                "excludeUsers": []
+            },
+            "platforms": {
+                "includePlatforms": [],
+                "excludePlatforms": [],
+                "mode": "all"
+            },
+            "locations": {
+                "includeLocations": [],
+                "excludeLocations": []
+            },
+            "clientAppTypes": [
+                "all"
+            ],
+            "applications": {
+                "includeApplications": [
+                    "All"
+                ],
+                "excludeApplications": []
+            },
+            "signInRiskLevels": [],
+            "userRiskLevels": [],
+            "servicePrincipalRiskLevels": []
+        },
+        "grantControls": {
+            "operator": "OR",
+            "builtInControls": [
+                "mfa"
+            ],
+            "customAuthenticationFactors": [],
+            "termsOfUse": []
+        },
+        "sessionControls": {
+            "signInFrequency": null,
+            "persistentBrowser": null,
+            "applicationEnforcedRestrictions": null,
+            "cloudAppSecurity": null
+        }
+    }
+}

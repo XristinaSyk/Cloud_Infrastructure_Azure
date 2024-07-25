@@ -1,0 +1,127 @@
+{
+    "name": "cosmosvnet",
+    "id": "/subscriptions/1d971a63-d3f3-49f3-8682-09958f6338ef/resourceGroups/meetingroomreservation/providers/Microsoft.Network/virtualNetworks/cosmosvnet",
+    "etag": "W/\"006074cf-4d51-4ca5-85cb-668899775a26\"",
+    "type": "Microsoft.Network/virtualNetworks",
+    "location": "northeurope",
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "877fd441-fcbb-422f-9408-e0a205d5e788",
+        "addressSpace": {
+            "addressPrefixes": [
+                "10.0.0.0/16"
+            ]
+        },
+        "subnets": [
+            {
+                "name": "subnet-tfaxslylokb24",
+                "id": "/subscriptions/1d971a63-d3f3-49f3-8682-09958f6338ef/resourceGroups/meetingroomreservation/providers/Microsoft.Network/virtualNetworks/cosmosvnet/subnets/subnet-tfaxslylokb24",
+                "etag": "W/\"006074cf-4d51-4ca5-85cb-668899775a26\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefix": "10.0.2.0/24",
+                    "ipConfigurations": [
+                        {
+                            "id": "/subscriptions/1d971a63-d3f3-49f3-8682-09958f6338ef/resourceGroups/MEETINGROOMRESERVATION/providers/Microsoft.Network/networkInterfaces/ENDPOINT-TFAXSLYLOKB24.NIC.331D5A47-A094-4107-9E86-5C4A70A5B3F9/ipConfigurations/PRIVATEENDPOINTIPCONFIG.6CFFF73C-7B07-4CAD-B2F4-AD7D390048CF"
+                        },
+                        {
+                            "id": "/subscriptions/1d971a63-d3f3-49f3-8682-09958f6338ef/resourceGroups/MEETINGROOMRESERVATION/providers/Microsoft.Network/networkInterfaces/ENDPOINT-TFAXSLYLOKB24.NIC.331D5A47-A094-4107-9E86-5C4A70A5B3F9/ipConfigurations/PRIVATEENDPOINTIPCONFIG.7A810076-D641-4A36-905F-2F0A00546796"
+                        }
+                    ],
+                    "privateEndpoints": [
+                        {
+                            "id": "/subscriptions/1d971a63-d3f3-49f3-8682-09958f6338ef/resourceGroups/MEETINGROOMRESERVATION/providers/Microsoft.Network/privateEndpoints/ENDPOINT-TFAXSLYLOKB24"
+                        }
+                    ],
+                    "serviceEndpoints": [],
+                    "delegations": [],
+                    "purpose": "PrivateEndpoints",
+                    "privateEndpointNetworkPolicies": "Disabled",
+                    "privateLinkServiceNetworkPolicies": "Enabled"
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            },
+            {
+                "name": "subnet-hzvipaqw",
+                "id": "/subscriptions/1d971a63-d3f3-49f3-8682-09958f6338ef/resourceGroups/meetingroomreservation/providers/Microsoft.Network/virtualNetworks/cosmosvnet/subnets/subnet-hzvipaqw",
+                "etag": "W/\"006074cf-4d51-4ca5-85cb-668899775a26\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefix": "10.0.0.0/24",
+                    "ipConfigurations": [
+                        {
+                            "id": "/subscriptions/1d971a63-d3f3-49f3-8682-09958f6338ef/resourceGroups/MEETINGROOMRESERVATION/providers/Microsoft.Network/networkInterfaces/PRIVATECOSMOS.NIC.7815EDC5-87FC-476F-BAB0-D87BD14B3BA5/ipConfigurations/PRIVATEENDPOINTIPCONFIG.8AC23D4B-EAF2-42F6-981A-9CF8559F474B"
+                        }
+                    ],
+                    "privateEndpoints": [
+                        {
+                            "id": "/subscriptions/1d971a63-d3f3-49f3-8682-09958f6338ef/resourceGroups/MEETINGROOMRESERVATION/providers/Microsoft.Network/privateEndpoints/PRIVATECOSMOS"
+                        }
+                    ],
+                    "serviceEndpoints": [],
+                    "delegations": [],
+                    "purpose": "PrivateEndpoints",
+                    "privateEndpointNetworkPolicies": "Disabled",
+                    "privateLinkServiceNetworkPolicies": "Enabled"
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            },
+            {
+                "name": "subnet-gvmhbgig",
+                "id": "/subscriptions/1d971a63-d3f3-49f3-8682-09958f6338ef/resourceGroups/meetingroomreservation/providers/Microsoft.Network/virtualNetworks/cosmosvnet/subnets/subnet-gvmhbgig",
+                "etag": "W/\"006074cf-4d51-4ca5-85cb-668899775a26\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefix": "10.0.1.0/24",
+                    "serviceAssociationLinks": [
+                        {
+                            "name": "AppServiceLink",
+                            "id": "/subscriptions/1d971a63-d3f3-49f3-8682-09958f6338ef/resourceGroups/meetingroomreservation/providers/Microsoft.Network/virtualNetworks/cosmosvnet/subnets/subnet-gvmhbgig/serviceAssociationLinks/AppServiceLink",
+                            "etag": "W/\"006074cf-4d51-4ca5-85cb-668899775a26\"",
+                            "type": "Microsoft.Network/virtualNetworks/subnets/serviceAssociationLinks",
+                            "properties": {
+                                "provisioningState": "Succeeded",
+                                "linkedResourceType": "Microsoft.Web/serverfarms",
+                                "link": "/subscriptions/1d971a63-d3f3-49f3-8682-09958f6338ef/resourceGroups/meetingroomreservation/providers/Microsoft.Web/serverfarms/ASP-meetingroomreservation-b2d2",
+                                "enabledForArmDeployments": false,
+                                "allowDelete": false,
+                                "subnetId": "00000000-0000-0000-0000-000000000000",
+                                "locations": []
+                            }
+                        }
+                    ],
+                    "serviceEndpoints": [
+                        {
+                            "provisioningState": "Succeeded",
+                            "service": "Microsoft.Storage",
+                            "locations": [
+                                "northeurope",
+                                "westeurope"
+                            ]
+                        }
+                    ],
+                    "delegations": [
+                        {
+                            "name": "delegation",
+                            "id": "/subscriptions/1d971a63-d3f3-49f3-8682-09958f6338ef/resourceGroups/meetingroomreservation/providers/Microsoft.Network/virtualNetworks/cosmosvnet/subnets/subnet-gvmhbgig/delegations/delegation",
+                            "etag": "W/\"006074cf-4d51-4ca5-85cb-668899775a26\"",
+                            "properties": {
+                                "provisioningState": "Succeeded",
+                                "serviceName": "Microsoft.Web/serverfarms",
+                                "actions": [
+                                    "Microsoft.Network/virtualNetworks/subnets/action"
+                                ]
+                            },
+                            "type": "Microsoft.Network/virtualNetworks/subnets/delegations"
+                        }
+                    ],
+                    "privateEndpointNetworkPolicies": "Disabled",
+                    "privateLinkServiceNetworkPolicies": "Enabled"
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            }
+        ],
+        "virtualNetworkPeerings": [],
+        "enableDdosProtection": false
+    }
+}
